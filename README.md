@@ -21,8 +21,8 @@ Sistema optimizado para la gestión de alquiler de vehículos con interfaz de co
 
 1. Clonar el repositorio:
 ```bash
-git clone <url-del-repositorio>
-cd <nombre-del-proyecto>
+git clone <https://github.com/SantFLY/optimizacion>
+cd <opyimizacion>
 ```
 
 2. Instalar dependencias:
@@ -33,12 +33,27 @@ pip install -r requirements.txt
 ## Estructura del Proyecto 📁
 
 ```
-src/
-├── database/          # Archivos de base de datos y consultas SQL
-├── models/           # Modelos de datos (Vehiculo, Alquiler)
-├── services/         # Servicios de negocio
-├── tests/           # Pruebas de rendimiento
-└── ui/              # Interfaz de usuario
+├── src/                    # Código fuente principal
+│   ├── database/          # Gestión de base de datos y consultas SQL
+│   ├── models/            # Modelos de datos (Vehiculo, Alquiler, etc.)
+│   ├── services/          # Servicios de negocio y lógica de la aplicación
+│   ├── tests/             # Pruebas unitarias y de rendimiento
+│   ├── utils/             # Utilidades y funciones auxiliares
+│   ├── ui/                # Interfaz de usuario y componentes de consola
+│   ├── config/            # Configuraciones y constantes
+│   ├── logs/              # Archivos de registro
+│   ├── main.py           # Punto de entrada principal
+│   └── run_performance_tests.py  # Script para pruebas de rendimiento
+│
+├── Archivos Ejecutables/   # Scripts de ejecución
+│   ├── Instalar dependencias.bat     # Script para instalar dependencias
+│   ├── ejecucion_normal.bat          # Script para ejecución normal
+│   └── ejecucion_pruebas_rendimiento.bat  # Script para pruebas de rendimiento
+│
+├── database/              # Archivos de base de datos SQLite
+├── requirements.txt       # Dependencias del proyecto
+├── LICENSE               # Archivo de licencia MIT
+└── README.md             # Este archivo
 ```
 
 ## Características Técnicas 🛠️
@@ -62,15 +77,24 @@ src/
 
 ## Uso 💻
 
-1. Ejecutar la aplicación:
-```bash
-python src/main.py
-```
+El proyecto incluye tres archivos ejecutables (.bat) para facilitar su uso:
 
-2. Ejecutar pruebas de rendimiento:
-```bash
-python src/run_performance_tests.py
-```
+### 1. `Instalar dependencias.bat`
+Este archivo instala todas las dependencias necesarias del proyecto.
+- **Uso**: Ejecutar este archivo la primera vez o cuando se necesite actualizar las dependencias
+- **Propósito**: Configuración inicial del proyecto
+
+### 2. `ejecucion_normal.bat`
+Este archivo ejecuta el programa principal con la funcionalidad estándar.
+- **Uso**: Usar este archivo para el uso diario del programa
+- **Propósito**: Iniciar la aplicación en modo normal
+
+### 3. `ejecucion_pruebas_rendimiento.bat`
+Este archivo ejecuta las pruebas de rendimiento del sistema.
+- **Uso**: Usar cuando se quiera evaluar el rendimiento
+- **Propósito**: Realizar pruebas de optimización
+
+**Nota**: Asegúrate de tener Python instalado en tu sistema antes de ejecutar cualquiera de los archivos.
 
 ## Funcionalidades 📋
 
