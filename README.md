@@ -21,8 +21,8 @@ Sistema optimizado para la gestión de alquiler de vehículos con interfaz de co
 
 1. Clonar el repositorio:
 ```bash
-git clone <url-del-repositorio>
-cd <nombre-del-proyecto>
+git clone <https://github.com/SantFLY/optimizacion>
+cd <opyimizacion>
 ```
 
 2. Instalar dependencias:
