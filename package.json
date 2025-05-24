@@ -1,0 +1,27 @@
+{
+  "name": "sistema-gestion-alquiler-vehiculos",
+  "version": "1.0.0",
+  "description": "Sistema optimizado para la gestión de alquiler de vehículos con interfaz de consola",
+  "main": "src/main.py",
+  "scripts": {
+    "start": "python src/main.py",
+    "test": "python src/run_performance_tests.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantFLY/optimizacion.git"
+  },
+  "keywords": [
+    "alquiler",
+    "vehiculos",
+    "gestion",
+    "python",
+    "optimizacion"
+  ],
+  "author": "SantFLY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SantFLY/optimizacion/issues"
+  },
+  "homepage": "https://github.com/SantFLY/optimizacion#readme"
+} 
